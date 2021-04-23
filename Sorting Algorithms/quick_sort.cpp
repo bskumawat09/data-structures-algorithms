@@ -1,6 +1,6 @@
 // Average Time	: O(n*logn)
 // Worst Time 	: O(n^2)
-// Space		: O(1)
+// Space	: O(1)
 // Not stable	: does NOT preserve the order for same elements
 // Not adaptive	: does NOT take less time if array is sorted
 
