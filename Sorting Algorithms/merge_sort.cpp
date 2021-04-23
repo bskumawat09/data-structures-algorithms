@@ -1,3 +1,8 @@
+// Time			: O(n*logn)
+// Space		: O(n)
+// Stable		: preserve the order for same elements
+// Not adaptive	: does NOT take less time if array is sorted
+
 #include <iostream>
 using namespace std;
 

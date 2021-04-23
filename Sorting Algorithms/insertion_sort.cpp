@@ -1,12 +1,10 @@
+// Time		: O(n^2)
+// Space	: O(1)
+// Stable	: preserve the order for same elements
+// Adaptive	: takes less time if array is sorted
+
 #include <iostream>
 using namespace std;
-
-void printArray(int arr[], int n) {
-	for(int i=0; i<n; i++) {
-		cout << arr[i] << " ";
-	}
-	cout << endl;
-}
 
 void insertionSort(int arr[], int n) {
 	for(int i=1; i<n; i++) {
@@ -19,6 +17,13 @@ void insertionSort(int arr[], int n) {
 		}
 		arr[j+1] = x;
 	}
+}
+
+void printArray(int arr[], int n) {
+	for(int i=0; i<n; i++) {
+		cout << arr[i] << " ";
+	}
+	cout << endl;
 }
 
 int main() {
