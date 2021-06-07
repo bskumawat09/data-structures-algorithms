@@ -20,7 +20,7 @@ public:
 
 	vector<int> shortestPath(int src, vector<pair<int, int>> adjList[], int n) {
 		vector<bool> visit(n, 0);		// used for finding topological sorting
-		stack<int> stk;					// stores topological order
+		stack<int> stk;				// stores topological order
 
 		for(int i=0; i<n; i++) {
 			if(!visit[i])
@@ -35,7 +35,7 @@ public:
 			stk.pop();
 
 			if(dist[u] != INT_MAX) {	// if the current node 'u' is reachable, then only
-										// try to minimize the distances of its adjecent nodes
+							// try to minimize the distances of its adjecent nodes
 				for(pair<int,int> node : adjList[u]) {
 					int v = node.second;
 					int w = node.first;
@@ -87,6 +87,6 @@ Input:
 	4 5 4
 	1
 Output:
-	4 0 1 2 3 5			...(Topological ordering)
+	4 0 1 2 3 5		...(Topological ordering)
 	INF 0 3 9 INF 10 	...(Distance array)
 */
